@@ -5,7 +5,11 @@ Monospace uses the Stripe Javascript bindings to validate a credit card, and the
 You can play with a live version at https://monospace-rails.heroku.com/
 
 Installation steps:
-* You will need a publishable token and a secret token. Add them both to config/initializers/stripe.rb.
+* Create a free account at https://manage.stripe.com
+* Create a "Plan" (also known as a subscription) within your stripe account called "premium"
+* Get test keys from stripe account under "Your Account" -> API Keys 
+
+* Add Stripe Test API keys to config/initializers/stripe.rb.
 * Install the bundler gem if you don't already have it
 * Run the command "bundle" from the root of this project
 * Run the command "bundle exec rake db:setup" from the root of this project
